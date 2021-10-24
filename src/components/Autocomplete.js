@@ -18,7 +18,9 @@ class Autocomplete extends Component {
     const { text } = this.state;
     return (
       <div className="autocomplete-container">
+        <label htmlFor="auto-complete">Autocomplete:</label>
         <input
+          id="auto-complete"
           className="autocomplete-input"
           type="text"
           value={text}
