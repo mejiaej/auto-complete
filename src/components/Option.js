@@ -1,16 +1,19 @@
-import { Component } from "react";
+import { Component } from 'react';
 
 class Option extends Component {
-  
   handleOptionClick = () => {
     const { text, handleOptionSelection } = this.props;
     handleOptionSelection(text);
-  }
+  };
 
   render() {
-    const { text } = this.props;
+    const { text, handleKeyDown, highlighted } = this.props;
     return (
-      <li onClick={this.handleOptionClick}>
+      <li
+        className={`${highlighted ? 'highlighted' : ''}`}
+        onClick={this.handleOptionClick}
+        onKeyDown={handleKeyDown}
+      >
         {text}
       </li>
     );
