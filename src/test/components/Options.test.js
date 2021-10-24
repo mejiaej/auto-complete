@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import Options from '../components/Options';
+import Options from '../../components/Options';
 
 test('renders two options after text prop changes to test1', () => {
   const props = {

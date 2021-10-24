@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import Autocomplete from '../components/Autocomplete';
+import Autocomplete from '../../components/Autocomplete';
 
 test('renders two options', () => {
   render(<Autocomplete />);

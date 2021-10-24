@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import Option from '../components/Option';
+import Option from '../../components/Option';
 
 test('renders one option', () => {
   const props = {
