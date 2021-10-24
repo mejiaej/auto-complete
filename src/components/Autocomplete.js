@@ -19,9 +19,11 @@ class Autocomplete extends Component {
     return (
       <div className="autocomplete-container">
         <input
+          className="autocomplete-input"
           type="text"
           value={text}
           onChange={this.handleTextChange}
+          placeholder="Insert text here...."
         />
         <Options inputText={text} handleOptionSelection={this.handleOptionSelection} />
       </div>

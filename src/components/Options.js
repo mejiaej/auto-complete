@@ -8,9 +8,13 @@ class Options extends Component {
     selectedText: null,
     options: [
       'test1',
+      'test123',
       'test2',
+      'test234',
       'test3',
+      'test345',
       'test4',
+      'test456',
       'asdasdasd',
       'simply dummy text',
       'typesetting industry',
