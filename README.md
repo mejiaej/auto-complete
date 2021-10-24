@@ -1,5 +1,9 @@
 # Toy Blocks
 
+## Dependencies
+
+node version used `15.13.0`
+
 ## Running locally
 
 1. `yarn install`
