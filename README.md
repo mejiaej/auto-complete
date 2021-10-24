@@ -21,4 +21,4 @@ Remember the list of [static options is here](https://github.com/mejiaej/auto-co
 
 
 ## Run tests
-1. `yarn test`
+1. `yarn test a`
