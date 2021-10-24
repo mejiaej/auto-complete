@@ -24,3 +24,7 @@ Remember the list of [static options is here](https://github.com/mejiaej/auto-co
 
 ## Run tests
 1. `yarn test a`
+
+## known bug
+
+When the options are displayed and you hover the mouse over an option and use you keyboard to navigate through all options two highlighted options appear, there should only be one. To fix this issue we'll need to add a `onMouseOver` function [here](https://github.com/mejiaej/auto-complete/blob/master/src/components/Option.js#L15) and use a callback from the parent to update [highlightedIndex](https://github.com/mejiaej/auto-complete/blob/master/src/components/Autocomplete.js#L7) with the correct index, that way both key and mouse events will share the same `highlightedIndex` state.
