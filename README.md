@@ -3,7 +3,9 @@
 ## Dependencies
 
 node version used `15.13.0`
+yarn version used `1.22.10`
 
+you can use npm instead of yarn
 ## Running locally
 
 1. `yarn install`
