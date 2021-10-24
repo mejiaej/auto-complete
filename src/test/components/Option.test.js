@@ -15,4 +15,13 @@ describe('<Option />', () => {
     // check if handleOptionSelection gets called
     expect(props.handleOptionSelection).toBeCalledWith(props.text);
   });
+
+  test('snapshot', () => {
+    const props = {
+      text: 'text',
+      handleOptionSelection: jest.fn(),
+    };
+    const option = render(<Option {...props} />);
+    expect(option).toMatchSnapshot();
+  });
 });

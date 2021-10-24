@@ -38,5 +38,15 @@ describe('<Options />', () => {
     expect(emptyDiv[0].className).toBe('empty-options');
     expect(emptyDiv[0].innerHTML).toBe('No options found');
   });
+
+  test('snapshot', () => {
+    const props = {
+      highlightedIndex: -1,
+      filteredOptions: [],
+      handleOptionSelection: jest.fn(),
+    }
+    const options = render(<Options {...props} />);
+    expect(options).toMatchSnapshot();
+  })
 });
 

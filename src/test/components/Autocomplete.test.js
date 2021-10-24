@@ -52,5 +52,10 @@ describe('<Autocomplete />', () => {
     expect(screen.queryByText('test456')).not.toBeInTheDocument();
     expect(input.getAttribute('value')).toBe('test456');
   });
+
+  test('snapshot', () => {
+    const autocomplete = render(<Autocomplete />);
+    expect(autocomplete).toMatchSnapshot();
+  });
 });
 
